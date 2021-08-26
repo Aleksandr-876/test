@@ -141,6 +141,7 @@ li {
      top: 59px;
      right: 0px;
      position: absolute;
+}
 
 .saas {
      font-family: Poppins;
@@ -229,10 +230,9 @@ li {
      background: #E5E5E5;
 }
 
-
-.main_wrapper {
-     padding: 132px 231px 0px 231px;
-     background: #E5E5E5;
+.main__wrapper {
+     width: 1600px;
+     margin: 0 auto;
 }
 
 .group1 {
@@ -240,7 +240,7 @@ li {
      justify-content: space-between;
      align-items: center;
      opacity: 0.7;
-     padding-bottom: 140px;
+     padding: 132px 231px 140px 231px;
 }
 
 .fedx {
@@ -269,13 +269,19 @@ li {
 }
 
 .group2 {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0px 231px 0x 153px;
+}
+
+.schedule {
      width: 574px;
      height: 574px;
-    
 }
 
 .group2__conteyner {
-     width: 500px;
-     height: 600px;
+     width: 496px;
+     height: 470px;
      background: red;
 }
