@@ -1,4 +1,4 @@
-body, ul, li, logo, h1, h2, h3, p, hr {
+body, ul, li, logo, h1, h2, h3, p, hr .group2 {
      margin: 0;
      padding: 0;
 }
@@ -214,7 +214,7 @@ li {
      width: 408px;
 }
 
-.card {
+.mastercard {
      font-family: Poppins;
      font-style: normal;
      font-weight: 500;
@@ -278,10 +278,83 @@ li {
 .schedule {
      width: 574px;
      height: 574px;
+     margin-left: 70px;
 }
 
 .group2__conteyner {
      width: 496px;
-     height: 470px;
-     background: red;
+     margin-right: 222px;
+}
+
+.main_title {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 160%;
+     letter-spacing: 0.05em;
+     text-transform: uppercase;
+     color: #1D92FF;
+}
+
+.main_deckription {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 39px;
+     line-height: 135%;
+     text-transform: capitalize;
+     color: #000000;
+     width: 420px;
+     margin-top: 10px;
+}
+
+.saas_2 {
+     font-weight: normal;
+}
+
+.main_deckription_2 {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 160%;
+     text-transform: capitalize;
+     color: rgba(1, 7, 13, 0.7);
+     margin-top: 25px;
+     margin-bottom: 45px;
+     width: 440px;
+}
+
+.commerce_2 {
+     font-weight: 600;
+}
+
+.card {
+     display: flex;
+     margin-bottom: 25px;
+}
+
+.arrow_2 {
+     width: 32px
+     height 32px;
+     margin-right: 15px;
+}
+
+.main_deskription_3 {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 160%;
+     text-transform: capitalize;
+     color: #01070D;
+     opacity: 0.5;
+     width: 377px;
+}
+
+.hand {
+     width: 32px
+     height 32px;
+     margin-right: 15px;
 }
