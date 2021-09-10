@@ -276,13 +276,10 @@ li {
 }
 
 .schedule {
-     width: 675px;
-     height: 574px;
      margin-left: 70px;
 }
 
 .group2__conteyner {
-     width: 496px;
      margin-right: 165px;
 }
 
@@ -363,27 +360,90 @@ li {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     width: 1600px;
 }
 
 .group3__conteyner {
-     width: 490px;
-     height: 723px;
      margin-left: 227px;
 }
 
 .schedule2 {
-     width: 782px;
-     height: 723px;
      left: 818px;
      top: 1880px;
 }
 
-.list_1 {
-     width: 490px;
-     height: 414px;
+.list__card {
      margin-top: 42px;
+}
+
+.list__card1 {
+     padding: 18px 24px;
      background: #FFFFFF;
+     border-radius: 10px;
+     position: relative;
+     margin-bottom: 12px;
+}
+
+.list__card1__h3 {
+     margin-bottom: 19px;
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 150%;
+     color: #1D92FF;
+}
+
+.list__card1__p {
+     padding-left: 11px;
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 150%;
+     color: rgba(1, 7, 13, 0.6);
+}
+
+.list__card1__p span {
+     color: rgba(29, 146, 255, 0.65);
+     text-decoration: underline;
+}
+
+.list__card1__point-up {
+     height: 7px;
+     width: 14px;
+     position: absolute;
+     top: 31px;
+     right: 24px;
+}
+
+.list__card2 {
+     position: relative;
+     background: #FFFFFF;
+     border: 1px solid rgba(1, 7, 13, 0.1);
+     box-sizing: border-box;
+     border-radius: 5px;
+     margin-bottom: 15px;
+}
+
+.list__card2__p {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 160%;
+     color: #01070D;
+     opacity: 0.5;
+     padding-left: 20px;
+     padding-top: 12px;
+     padding-bottom: 12px;
+}
+
+.list__card1__point-down {
+     position: absolute;
+     height: 6px;
+     width: 12px;
+     top: 20px;
+     right: 24px;
 }
 
 .main_btn_1 {
@@ -393,7 +453,7 @@ li {
      color: #FFFFFF;
      border-radius: 4px;
      text-transform: capitalize;
-     margin-top: 45px;
+     margin-top: 30px;
      margin-right: 25px;
 }
 
@@ -405,21 +465,7 @@ li {
      color: #1D92FF;
 }
 
-.group4 {
-     width: 1146px;
-     height: 858px;
-     background: #FFFFFF;
-     margin: 0 auto;
-}
-
-.group4_conteyner {
-     width: 628px;
-     height: 195px;
-     margin: 0 auto;
-}
-
-.main_title_group4 {
-     text-align: center;
+.electric__h2 {
      font-family: Poppins;
      font-style: normal;
      font-weight: normal;
@@ -429,9 +475,11 @@ li {
      letter-spacing: 0.05em;
      text-transform: uppercase;
      color: #1D92FF;
+     margin-top: 85px;
+     margin-bottom: 10px;
 }
 
-.main_deskription_group4 {
+.electric__h3 {
      font-family: Poppins;
      font-style: normal;
      font-weight: 600;
@@ -439,11 +487,10 @@ li {
      line-height: 135%;
      text-align: center;
      color: #000000;
-     width: 628px;
-     height: 106px;
+     margin: 10px 500px 25px 500px;
 }
 
-.main_text {
+.electric__p {
      font-family: Poppins;
      font-style: normal;
      font-weight: normal;
@@ -451,32 +498,64 @@ li {
      line-height: 160%;
      text-align: center;
      color: rgba(0, 0, 0, 0.7);
-     margin: 0 auto;
 }
 
-.group4_conteyner1 {
+.electric {
+     background: url(img/rectangle.png) no-repeat;
+     padding: 44px 69px 82px 67px;
+     margin: 54px 223px 146px 231px;
      display: flex;
-     width: 1146px;
-     height: 603px;
-     margin: 0 auto;
-     border-style: dashed;
-     border-bottom: none;
-     border-width: 1px;
-     border-color:  #77beff;
      flex-wrap: wrap;
 }
 
-.box {
+.card-electric {
      width: 226px;
-     height: 208,5px;
-     background: #E5E5E5;
+     flex-grow: 1;
+     flex-shrink: 0;
+     flex-basis: 30%;
 }
 
-.hammer {
-     
+.card-electric__square {
+     background: url(img/square.png) no-repeat;
+     width: 90px;
+     height: 88px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
 }
 
-.box_title {
+.card-electric__responsive  {
+     width: 24px;
+     height: 24px;
+}
+
+.card-electric__smart  {
+     width: 30px;
+     height: 16px;
+}
+
+.card-electric__user  {
+     width: 24px;
+     height: 23px;
+}
+
+.card-electric__built  {
+     width: 25px;
+     height: 24px;
+}
+
+.card-electric__best  {
+     width: 27px;
+     height: 26px;
+}
+
+.card-electric__creative  {
+     width: 24px;
+     height: 16px;
+}
+
+.card-electric__title  {
      font-family: Poppins;
      font-style: normal;
      font-weight: 500;
@@ -484,9 +563,13 @@ li {
      line-height: 150%;
      text-transform: capitalize;
      color: #000000;
+     margin-top: 24px;
+     margin-bottom: 15px;
+     text-align: center;
+
 }
 
-.box_text {
+.card-electric__description {
      font-family: Poppins;
      font-style: normal;
      font-weight: normal;
@@ -494,4 +577,27 @@ li {
      line-height: 160%;
      text-align: center;
      color: rgba(1, 7, 13, 0.7);
+     width: 226px;
+}
+
+.buy__h2 {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 39px;
+     line-height: 135%;
+     text-align: center;
+     text-transform: capitalize;
+     color: #01070D;
+}
+
+.buy__p {
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 160%;
+     text-align: center;
+     color: rgba(1, 7, 13, 0.7);
+     margin-bottom: 60px;
 }
