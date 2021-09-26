@@ -1,4 +1,4 @@
-body, ul, li, logo, h1, h2, h3, p, hr, main__pic {
+body, ul, li, logo, h1, h2, h3, p, hr, img {
      margin: 0;
      padding: 0;
  }
@@ -234,20 +234,16 @@ body, ul, li, logo, h1, h2, h3, p, hr, main__pic {
  
  .main__wrapper {
    display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-left: 240px;
-   margin-right: 435px;
-   margin-bottom: 150px;
- }
- 
- .maint__description {
-   max-width: 496px;
+   padding: 0px 222px 0px 25px;
  }
  
  .main__pic {
-   margin-right: 110px;
+   margin-right: 155px;
  }
+
+ .maint__description {
+   
+}
  
  .description__title {
    font-family: Poppins;
@@ -257,9 +253,6 @@ body, ul, li, logo, h1, h2, h3, p, hr, main__pic {
    line-height: 135%;
    text-transform: capitalize;
    color: #000000;
-   max-width: 421px;
-   margin-top: 10px;
-   margin-bottom: 25px;
  }
  
  .description__title--normal {
@@ -319,8 +312,6 @@ body, ul, li, logo, h1, h2, h3, p, hr, main__pic {
  }
  
  .information__wrapper {
-   max-width: 1374px;
-   margin: 0 auto;
  }
  
  .information__inner {
