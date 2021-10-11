@@ -271,7 +271,7 @@ body, ul, li, logo, h1, h2, h3, p, hr, img, input, section {
    color: #000000;
  }
  
- .description__text {
+ .main__description-text {
    font-family: Poppins;
    font-style: normal;
    font-weight: normal;
@@ -451,17 +451,23 @@ body, ul, li, logo, h1, h2, h3, p, hr, img, input, section {
 .benefits__description {
   max-width: 608px;margin: 0 auto;
   text-align: center;
+  margin-bottom: 54px;
 }
 
 .benefits__inner {
   display: flex;
   flex-wrap: wrap;
-  padding: 44px 67px;
+  justify-content: space-between;
+  padding: 44px 122px 22px 122px;
+  background: url(img/rectangle.png) no-repeat;
+  max-width: 1146px;
+  min-height: 437px;
+  margin: 0 auto;
 }
 
 .benefits__item {
   max-width: 226px;
-  margin-right: 166px;
+  margin-bottom: 60px;
 }
 
 .benefits__icon {
@@ -479,14 +485,27 @@ body, ul, li, logo, h1, h2, h3, p, hr, img, input, section {
   height: 24px;
 }
 
-.benefits__inner--title {
+.benefits__inner-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
   text-align: center;
   margin-top: 24px;
   margin-bottom: 15px;
+  text-transform: capitalize;
+  color: #000000;
 }
 
-.description__text {
-  
+.benefits__description-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: rgba(1, 7, 13, 0.7);
+  text-align: center;
 }
 
 
