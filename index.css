@@ -1,10 +1,22 @@
-body, ul, li, logo, h1, h2, h3, p, hr, img {
+body, ul, li, logo, h1, h2, h3, p, hr, img, input, section {
      margin: 0;
      padding: 0;
  }
  
  * {
      box-sizing: border-box;
+ }
+
+ body {
+  background: #FCFCFC;
+ }
+
+ h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 135%;
  }
  
  .header {
@@ -211,9 +223,9 @@ body, ul, li, logo, h1, h2, h3, p, hr, img {
      color: rgba(255, 255, 255, 0.7);
  }
  
- .socials {
-     background: #FCFCFC;
- }
+
+
+
  
  .social__wrapper {
      padding: 124px 231px 140px 231px;
@@ -228,9 +240,7 @@ body, ul, li, logo, h1, h2, h3, p, hr, img {
  
 
 
- .main {
-   background: #FCFCFC;
- }
+
  
  .main__wrapper {
    display: flex;
@@ -241,18 +251,14 @@ body, ul, li, logo, h1, h2, h3, p, hr, img {
    margin-right: 155px;
  }
 
- .maint__description {
-   
+ .description__subtitle {
+   margin-top: 52px;
 }
  
- .description__title {
-   font-family: Poppins;
-   font-style: normal;
-   font-weight: 600;
-   font-size: 39px;
-   line-height: 135%;
+ .main-description__title {
    text-transform: capitalize;
    color: #000000;
+   margin-bottom: 25px;
  }
  
  .description__title--normal {
@@ -307,23 +313,183 @@ body, ul, li, logo, h1, h2, h3, p, hr, img {
  
 
 
- .information {
-   background: #FCFCFC;
- }
- 
+
+
+
  .information__wrapper {
+   max-width: 1143px;
+   margin: 0 auto;
  }
  
  .information__inner {
    display: flex;
-   justify-content: space-between;
-   max-width: 1225px;
-   margin-left: 153px;
-   margin-right: 222px;
+ }
+
+ .information__description {
+   max-width: 490px;
+ }
+
+ .information-description__title {
+  text-transform: capitalize;
+  color: #01070D;
+  margin: 10px 50px 42px 0px;
+ }
+
+ /*Аккордеон начало*/
+
+ .information__box {
+   max-width: 472px;
+   margin-right: 100px;
+   border: 1px solid rgba(1, 7, 13, 0.1);
+   border-radius: 5px;
+   margin-bottom: 15px;
+
+ }
+
+ .information__box-item { 
+   padding: 12px 24px;
  }
  
- .information__box-open {
-   margin-bottom: 12px;
+ .box-item__title {
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 160%;
+   color: #01070D;
+   opacity: 0.5;
+   margin-right: 71px;
+   display: block;
+   cursor: pointer;
+   position: relative;
  }
+
+ .box-item__title:after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: #01070D transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: -65px;
+    transform: translateY(-50%);
+ }
+
+ .box-item__input {
+   width: 0;
+   height: 0;
+   appearance: none;
+   position: absolute;
+ }
+
+ .box-item__input:checked ~ .box-item__title {
+   background-color: #fff;
+ }
+
+ .box-item__input:checked ~ .box-item__title:after {
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: #01070D transparent transparent transparent;
+ }
+
+ .box-item__input:checked ~ .box-item__text {
+   display: block;
+ }
+
+ .box-item__text {
+  display: none;
+  position: relative;
+ }
+ 
+
+ .text__item {
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 150%;
+   color: rgba(1, 7, 13, 0.6);
+ }
+
+  .box__text--blue {
+    color: rgba(29, 146, 255, 0.65);
+  }
+
+  /*Аккордеон конец*/
+
+  .information__btn--blue {
+    padding: 15px 62px;
+    background-color: #1D92FF;
+    color: #fff;
+    text-transform: capitalize;
+    margin-right: 20px;
+  }
+
+  .information__btn--white {
+    padding: 15px 55px;
+    border: 1px solid rgba(29, 146, 255, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    color: #1D92FF;
+    text-transform: capitalize;
+  }
+
+ .information__pic {
+   margin-right: -197px;
+ }
+
+
+
+
+
+.benefits__wrapper {
+  max-width: 1146px;
+
+}
+
+.benefits__description {
+  max-width: 608px;margin: 0 auto;
+  text-align: center;
+}
+
+.benefits__inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 44px 67px;
+}
+
+.benefits__item {
+  max-width: 226px;
+  margin-right: 166px;
+}
+
+.benefits__icon {
+  background: url('img/square.png') no-repeat;
+  width: 90px;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.benefits__icon-img {
+  width: 24px;
+  height: 24px;
+}
+
+.benefits__inner--title {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+
+.description__text {
+  
+}
+
+
+ 
  
  
